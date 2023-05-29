@@ -37,7 +37,7 @@ COLOR PALETTE
 	15.1 Newsletter
 	15.2 Footer Content
 	15.3 Footer Copyright
-
+16. Grid (images)
 
 ******************************/
 
@@ -1504,4 +1504,58 @@ input:last-of-type
 .footer_social .menu_social_item:last-child
 {
 	margin-right: 0px;
+}
+/***********************************
+16 Grid
+*********************************/
+.grid {
+	max-width: 69em;
+	list-style: none;
+	margin: 30px auto;
+	padding: 0;
+}
+.grid li {
+	display: block;
+	float: left;
+	padding: 7px;
+	width: 33%;
+	opacity: 0;
+}
+.grid li.shown, .no-js .grid li, .no-cssanimations .grid li {
+	opacity: 1;
+}
+.grid li a, .grid li img {
+	outline: 0;
+	border: 0;
+	display: block;
+	max-width: 100%}
+.grid img {
+	opacity: .7;
+}
+.grid img:hover {
+	opacity: 1;
+}
+.grid.effect-2 li.animate {
+	-webkit-transform: translateY(200px);
+	-moz-transform: translateY(200px);
+	transform: translateY(200px);
+	-webkit-animation: moveUp .65s ease forwards;
+	-moz-animation: moveUp .65s ease forwards;
+	animation: moveUp .65s ease forwards;
+}
+@-webkit-keyframes moveUp {
+	to {
+	-webkit-transform: translateY(0);
+	opacity: 1;
+}
+}@-moz-keyframes moveUp {
+	to {
+	-moz-transform: translateY(0);
+	opacity: 1;
+}
+}@keyframes moveUp {
+	to {
+	transform: translateY(0);
+	opacity: 1;
+}
 }
