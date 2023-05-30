@@ -906,6 +906,35 @@ section
 
 
 
+.floating-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 60px;
+	height: 60px;
+	background-color: #25d366;
+	color: #fff;
+	border-radius: 50%;
+	font-size: 24px;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+	z-index: 100;
+	display: flex;
+	flex:auto;
+	align-items: center;
+	justify-items: center;
+	padding-left: 5.5px;
+}
+.floating-button img {
+	width: 95%;
+	height: auto;
+}
+
+.floating-button:hover{
+	background:#4d4e4e;
+}
+
+
+
 /*********************************
 15. Footer
 *********************************/
