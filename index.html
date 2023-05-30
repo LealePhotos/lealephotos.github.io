@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Course</title>
+<title>Pablo Otero</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Course Project">
@@ -13,7 +13,10 @@
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+
+<script src="assets/js/modernizr.custom.js"></script>
 </head>
+
 <body>
 
 <div class="super_container">
@@ -135,77 +138,39 @@
 
 			</div>
 
-			<div class="hero_slider_left hero_slider_nav trans_200"><span class="trans_200">prev</span></div>
-			<div class="hero_slider_right hero_slider_nav trans_200"><span class="trans_200">next</span></div>
+			<div class="hero_slider_left hero_slider_nav trans_200"><span class="trans_200"> < </span></div>
+			<div class="hero_slider_right hero_slider_nav trans_200"><span class="trans_200"> > </span></div>
 		</div>
 
 	</div>
 
-	<div class="hero_boxes">
-		<div class="hero_boxes_inner">
-			<div class="container">
-				<div class="row">
 
-					<div class="col-lg-4 hero_box_col">
-						<div class="hero_box d-flex flex-row align-items-center justify-content-start">
-							<img src="images/earth-globe.svg" class="svg" alt="">
-							<div class="hero_box_content">
-								<h2 class="hero_box_title">Online Courses</h2>
-								<a href="courses.html" class="hero_box_link">view more</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 hero_box_col">
-						<div class="hero_box d-flex flex-row align-items-center justify-content-start">
-							<img src="images/books.svg" class="svg" alt="">
-							<div class="hero_box_content">
-								<h2 class="hero_box_title">Our Library</h2>
-								<a href="courses.html" class="hero_box_link">view more</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 hero_box_col">
-						<div class="hero_box d-flex flex-row align-items-center justify-content-start">
-							<img src="images/professor.svg" class="svg" alt="">
-							<div class="hero_box_content">
-								<h2 class="hero_box_title">Our Teachers</h2>
-								<a href="teachers.html" class="hero_box_link">view more</a>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</div>
+	<!-- GALLERY SECTION -->
+	<div class="gallery">
+    <img src="images/portfolio/1.jpg">
+    <img src="images/portfolio/3.jpg">
+		<img src="images/portfolio/4.jpg">
+		<img src="images/portfolio/12.png">
+		<img src="images/portfolio/13.png">
+		<img src="images/portfolio/10.png">
+		<img src="images/portfolio/9.jpg">
+		<img src="images/portfolio/2.jpg">
+		<img src="images/portfolio/14.png">
+		<img src="images/portfolio/5.jpg">
+		<img src="images/portfolio/6.jpg">
+		<img src="images/portfolio/7.jpg">
+		<img src="images/portfolio/6.jpg">
+		<img src="images/portfolio/9.jpg">
+		<img src="images/portfolio/11.png">
+  </div>
 
 
-	<!-- PORTFOLIO SECTION -->
-	<div id="portfolio">
-		<div class="container"
-			<div class="row mt">
-			<ul class="grid effect-2" id="grid">
-				<li><a href="singleproject.html"><img src="images/portfolio/1.jpg"></a></li>
-				<li><a href="singleproject.html"><img src="images/portfolio/3.jpg"></a></li>
-				<li><a href="singleproject.html"><img src="images/portfolio/4.jpg"></a></li>
-				<li><a href="singleproject.html"><img src="images/portfolio/12.png"></a></li>
-				<li><a href="singleproject.html"><img src="images/portfolio/13.png"></a></li>
-				<li><a href="singleproject.html"><img src="images/portfolio/10.png"></a></li>
-				<li><a href="singleproject.html"><img src="images/portfolio/9.jpg"></a></li>
-				<li><a href="singleproject.html"><img src="images/portfolio/2.jpg"></a></li>
-				<li><a href="singleproject.html"><img src="images/portfolio/14.png"></a></li>
-				<li><a href="singleproject.html"><img src="images/portfolio/5.jpg"></a></li>
-				<li><a href="singleproject.html"><img src="images/portfolio/6.jpg"></a></li>
-				<li><a href="singleproject.html"><img src="images/portfolio/7.jpg"></a></li>
-				<li><a href="singleproject.html"><img src="images/portfolio/6.jpg"></a></li>
-				<li><a href="singleproject.html"><img src="images/portfolio/9.jpg"></a></li>
-				<li><a href="singleproject.html"><img src="images/portfolio/11.png"></a></li>
-			</ul>
-			</div><!-- row -->
-		</div><!-- container -->
-	</div><!-- portfolio -->
+	<div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img id="modalImage" src="" alt="Imagen Modal">
+  </div>
+
+
 
 	
 	<!-- Footer -->
@@ -356,18 +321,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="plugins/easing/easing.js"></script>
 <script src="js/custom.js"></script>
 
-<script src="js/assets/AnimOnScroll.js"></script>
-<script src="js/assets/imagesloaded.js"></script>
-<script src="js/assets/main.js"></script>
-<script src="js/assets/masonry.pkgd.min.js"></script>
-<script src="js/assets/classie.js"></script>
-<script>
-	new AnimOnScroll( document.getElementById( 'grid' ), {
-		minDuration : 0.4,
-		maxDuration : 0.7,
-		viewportFactor : 0.2
-	} );
-</script>
+<script src="js/assets/images.js"></script>
+
 
 </body>
 </html>

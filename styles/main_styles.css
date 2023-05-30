@@ -23,21 +23,21 @@ COLOR PALETTE
 5. Home
 	5.1 Hero Slider
 	5.2 Hero Slider Navigation
-6. Hero Boxes
-7. Page Section
+6. Hero Boxes --- Comentado
+7. Page Section --- Comentado
 8. Buttons
-9. Popular
-10. Register
-11. Search
-	11.1 Search Form
-12. Services
-13. Testimonials
-14. Events
+9. Popular --- Eliminado
+10. Register --- Eliminado
+11. Search --- Eliminado
+	11.1 Search Form --- Eliminado
+12. Services --- Eliminado
+13. Testimonials --- Eliminado
+14. Event --- Eliminado
 15. Footer
 	15.1 Newsletter
 	15.2 Footer Content
 	15.3 Footer Copyright
-16. Grid (images)
+16. Gallery (images)
 
 ******************************/
 
@@ -769,7 +769,7 @@ section
 6. Hero Boxes
 *********************************/
 
-.hero_boxes
+/* .hero_boxes
 {
 	width: 100%;
 	height: 0px;
@@ -838,12 +838,12 @@ section
 .hero_box_link:hover
 {
 	color: #1a1a1a;
-}
+} */
 
 /*********************************
 7. Page Section
 *********************************/
-
+/* 
 .page_section
 {
 	padding-top: 117px;
@@ -875,7 +875,7 @@ section
 	height: 4px;
 	content: '';
 	background: #ffb606;
-}
+} */
 
 /*********************************
 8. Buttons
@@ -902,452 +902,7 @@ section
 	height: 48px;
 }
 
-/*********************************
-9. Popular
-*********************************/
 
-.popular
-{
-
-}
-.course_boxes
-{
-	margin-top: 68px;
-}
-.card
-{
-	display: block;
-	background: #f8f9fb;
-	border: none;
-}
-.card-img-top
-{
-	border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-}
-.card-body
-{
-	padding-top: 0px;
-	padding-bottom: 0px;
-	padding-left: 15px;
-	padding-right: 15px;
-}
-.card-title
-{
-	margin-top: 55px;
-}
-.card-title a
-{
-	font-size: 22px;
-	font-weight: 500;
-	color: #1a1a1a;
-	line-height: 1.2;
-}
-.card-title a:hover
-{
-	color: #a5a5a5;
-}
-.card-text
-{
-	font-size: 14px;
-	font-weight: 500;
-	color: #a5a5a5;
-	margin-top: -12px;
-}
-.price_box
-{
-	width: 100%;
-	height: 67px;
-	background: #eaebec;
-	margin-top: 41px;
-	padding-left: 35px;
-}
-.course_author_image
-{
-	width: 46px;
-	height: 46px;
-	border-radius: 50%;
-	overflow: hidden;
-}
-.course_author_name
-{
-	font-size: 14px;
-	font-weight: 500;
-	color: #1a1a1a;
-	padding-left: 20px;
-	margin-top: 7px;
-}
-.course_author_name span
-{
-	color: #a5a5a5;
-}
-.course_price
-{
-	width: 67px;
-	height: 67px;
-	background: #ffb606;
-	margin-left: auto;
-}
-.course_price span
-{
-	color: #FFFFFF;
-	font-size: 18px;
-	font-weight: 500;
-	margin-top: 7px;
-}
-
-/*********************************
-10. Register
-*********************************/
-
-.register
-{
-	width: 100%;
-}
-.register_section
-{
-	width: 100%;
-	background: #ffb606;
-	padding-top: 156px;
-	padding-bottom: 161px;
-}
-.register_content
-{
-	width: 522px;
-}
-.register_title
-{
-	color: #FFFFFF;
-	margin-bottom: 16px;
-	line-height: 1.63;
-}
-.register_title:last-child
-{
-	margin-bottom: 0px;
-}
-.register_title	span
-{
-	color: #1a1a1a;
-}
-.register_text
-{
-	color: #FFFFFF;
-	font-weight: 500;
-	margin-top: 32px;
-	padding-left: 25px;
-	padding-right: 25px;
-	margin-bottom: 0px;
-}
-.register_button
-{
-	background: #1a1a1a;
-	margin-top: 65px;
-}
-.register_button a
-{
-	color: #FFFFFF;
-}
-
-/*********************************
-11. Search
-*********************************/
-
-.search_section
-{
-	width: 100%;
-	height: 100%;
-	background: #ececec;
-}
-.search_content
-{
-	width: 522px;
-}
-.search_background
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	opacity: 0.23;
-}
-.search_title
-{
-	color: #1a1a1a;
-}
-
-/*********************************
-11.1 Search Form
-*********************************/
-
-.search_form
-{
-	margin-top: 57px;
-}
-.input_field
-{
-	width: 100%;
-	height: 42px;
-	background: #FFFFFF;
-	box-sizing: border-box;
-	border: solid 2px #FFFFFF;
-	padding-left: 25px;
-	margin-bottom: 24px;
-}
-input:last-of-type
-{
-	margin-bottom: 0px;
-}
-.input_field:focus
-{
-	outline: none !important;
-	border: solid 2px #ffb606;
-}
-.search_submit_button
-{
-	width: 100%;
-	height: 48px;
-	background: #ffb606;
-	color: #FFFFFF;
-	font-size: 14px;
-	text-transform: uppercase;
-	font-weight: 700;
-	margin-top: 28px;
-	border: none;
-	cursor: pointer;
-}
-.search_submit_button:hover
-{
-	box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
-}
-.search_submit_button:focus
-{
-	outline: solid 2px #FFFFFF;
-}
-
-/*********************************
-12. Services
-*********************************/
-
-.services
-{
-	padding-bottom: 76px;
-}
-.services_row
-{
-	margin-top: 65px;
-}
-.service_item
-{
-	margin-bottom: 41px;
-}
-.service_item h3
-{
-	font-family: 'Roboto', sans-serif;
-	font-size: 22px;
-	font-weight: 500;
-	color: #1a1a1a;
-	margin-bottom: 13px;
-}
-.service_item p
-{
-	font-size: 14px;
-	font-weight: 500;
-	color: #a5a5a5;
-	max-width: 100%;
-	margin-bottom: 0px;
-}
-.icon_container
-{
-	height: 41px;
-	width: auto;
-	margin-bottom: 30px;
-}
-.icon_container img
-{
-	height: 100%;
-}
-
-/*********************************
-13. Testimonials
-*********************************/
-
-.testimonials
-{
-	width: 100%;
-	background: #1a1a1a;
-}
-.testimonials_background_container
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-.testimonials_background
-{
-	width: 100%;
-	height: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	opacity: 0.27;
-}
-.testimonials .section_title h1
-{
-	color: #FFFFFF;
-}
-.testimonials_slider_container
-{
-	padding-left: 30px;
-	padding-right: 30px;
-	margin-top: 56px;
-}
-.testimonials_item
-{
-	width: 100%;
-	padding-bottom: 75px;
-}
-.quote
-{
-	font-size: 36px;
-	color: #ffb606;
-}
-.testimonials_text
-{
-	color: #FFFFFF;
-	margin-bottom: 0px;
-}
-.testimonial_user
-{
-	margin-top: 43px;
-}
-.testimonial_image
-{
-	width: 98px;
-	height: 98px;
-	border-radius: 50%;
-	overflow: hidden;
-}
-.testimonial_image img
-{
-	width: 100%;
-	height: auto;
-}
-.testimonial_name
-{
-	font-size: 16px;
-	font-weight: 700;
-	text-transform: uppercase;
-	color: #f6af03;
-	margin-top: 21px;
-}
-.testimonial_title
-{
-	font-size: 14px;
-	font-weight: 500;
-	color: #FFFFFF;
-	margin-top: 6px;
-}
-.testimonials_slider .owl-dots
-{
-	display: -webkit-box !important;
-	display: -moz-box !important;
-	display: -ms-flexbox !important;
-	display: -webkit-flex !important;
-	display: flex !important;
-	flex-direction: row !important;
-	justify-content: center;
-	align-items: center;
-}
-.testimonials_slider .owl-dot span
-{
-	width: 8px !important;
-	height: 8px !important;
-	border: solid 2px #FFFFFF;
-	background: transparent !important;
-}
-.testimonials_slider .owl-dot.active span
-{
-	width: 16px !important;
-	height: 16px !important;
-	border: none;
-	background: #ffb606 !important;
-}
-
-/*********************************
-14. Events
-*********************************/
-
-.event_items
-{
-	margin-top: 68px;
-}
-.event_item
-{
-	margin-bottom: 56px;
-}
-.event_item:last-child
-{
-	margin-bottom: 0px;
-}
-.event_date
-{
-	width: 131px;
-	height: 131px;
-	border: solid 2px #ffb606;
-	margin-bottom: 18px;
-}
-.event_day
-{
-	font-size: 48px;
-	font-weight: 700;
-	color: #ffb606;
-	margin-bottom: 1px;
-	line-height: 1;
-}
-.event_month
-{
-	font-size: 16px;
-	font-weight: 700;
-	color: #ffb606;
-}
-.event_name a
-{
-	font-size: 22px;
-	font-weight: 500;
-	color: #1a1a1a;
-}
-.event_name a:hover
-{
-	color: #ffb606;
-}
-.event_location
-{
-	font-size: 14px;
-	font-weight: 500;
-	color: #1a1a1a;
-	margin-top: 2px;
-}
-.event_content p
-{
-	font-weight: 500;
-	color: #a5a5a5;
-	margin-top: 21px;
-	margin-bottom: 13px;
-}
-.event_image
-{
-
-}
-.event_image img
-{
-	width: 100%;
-}
 
 /*********************************
 15. Footer
@@ -1505,57 +1060,80 @@ input:last-of-type
 {
 	margin-right: 0px;
 }
+
+
+
 /***********************************
-16 Grid
+16 Gallery
 *********************************/
-.grid {
-	max-width: 69em;
-	list-style: none;
-	margin: 30px auto;
-	padding: 0;
+
+.gallery {
+  display: flex;
+  flex-wrap:wrap;
+	align-items: center;
+	justify-items: center;
+	max-width: 80%;
+	margin-left:auto;
+	
 }
-.grid li {
-	display: block;
-	float: left;
-	padding: 7px;
-	width: 33%;
-	opacity: 0;
+
+.gallery img {
+  width: 500px;
+  height: 500px;
+  object-fit:cover;
+  margin: 8px;
 }
-.grid li.shown, .no-js .grid li, .no-cssanimations .grid li {
+
+.gallery img {
+	opacity: .65;
+	transition: opacity 0.5s linear;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+}
+.gallery img:hover {
 	opacity: 1;
+	object-fit:scale-down;
 }
-.grid li a, .grid li img {
-	outline: 0;
-	border: 0;
-	display: block;
-	max-width: 100%}
-.grid img {
-	opacity: .7;
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
 }
-.grid img:hover {
-	opacity: 1;
+
+.modal img {
+  display: block;
+  margin: 0 auto;
+	height: auto;
+	width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 60px;
 }
-.grid.effect-2 li.animate {
-	-webkit-transform: translateY(200px);
-	-moz-transform: translateY(200px);
-	transform: translateY(200px);
-	-webkit-animation: moveUp .65s ease forwards;
-	-moz-animation: moveUp .65s ease forwards;
-	animation: moveUp .65s ease forwards;
+
+.modal .close {
+	color: #fff;
+	background:slategray;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 30px;
+	font-weight: bold;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	cursor: pointer;
+	border-radius: 15%;
+	-webkit-border-radius: 15%;
+	-moz-border-radius: 15%;
+	-ms-border-radius: 15%;
+	-o-border-radius: 15%;
 }
-@-webkit-keyframes moveUp {
-	to {
-	-webkit-transform: translateY(0);
-	opacity: 1;
-}
-}@-moz-keyframes moveUp {
-	to {
-	-moz-transform: translateY(0);
-	opacity: 1;
-}
-}@keyframes moveUp {
-	to {
-	transform: translateY(0);
-	opacity: 1;
-}
-}
+
+
