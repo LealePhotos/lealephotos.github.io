@@ -14,7 +14,11 @@
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
 
-<script src="assets/js/modernizr.custom.js"></script>
+
+<link rel="icon" type="image/x-icon" href="images/logos/favicon.ico">
+
+<!-- ELIMINAR -->
+<!-- <script src="assets/js/modernizr.custom.js"></script> -->
 </head>
 
 <body>
@@ -28,21 +32,21 @@
 			<!-- Logo -->
 			<div class="logo_container">
 				<div class="logo">
-					<img src="images/logo.png" alt="">
-					<span>course</span>
+					<img src="images/logos/Pablo Otero Negro transparente.png" alt="logo-header">
+					<!-- <span>Pablo Otero</span> -->
 				</div>
 			</div>
 
 			<!-- Main Navigation --> <!-- ES EL MENU DE NAVEGACION-->
-			<nav class="main_nav_container">
-				<div class="main_nav">
+			<nav class="main_nav_container" >
+				<div class="main_nav" id="contMenu">
 					<ul class="main_nav_list">
-						<li class="main_nav_item"><a href="#">home</a></li>
-						<li class="main_nav_item"><a href="#">about us</a></li>
-						<li class="main_nav_item"><a href="courses.html">courses</a></li>
-						<li class="main_nav_item"><a href="elements.html">elements</a></li>
-						<li class="main_nav_item"><a href="news.html">news</a></li>
-						<li class="main_nav_item"><a href="contact.html">contact</a></li>
+						<li class="main_nav_item" data-categoria="all"><a href="#">todo</a></li>
+						<li class="main_nav_item" data-categoria="bodas"><a href="#">bodas</a></li>
+						<li class="main_nav_item" data-categoria="quinces"><a href="#">quinces</a></li>
+						<li class="main_nav_item" data-categoria="cumples"><a href="#">cumpleaños</a></li>
+						<li class="main_nav_item" data-categoria="bautismos"><a href="#">bautismos</a></li>
+						<li class="main_nav_item" data-categoria="eventos"><a href="#">eventos</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -76,13 +80,15 @@
 		<div class="menu_inner menu_mm">
 			<div class="menu menu_mm">
 				<ul class="menu_list menu_mm">
-					<li class="menu_item menu_mm"><a href="#">Home</a></li>
-					<li class="menu_item menu_mm"><a href="#">About us</a></li>
-					<li class="menu_item menu_mm"><a href="courses.html">Courses</a></li>
-					<li class="menu_item menu_mm"><a href="elements.html">Elements</a></li>
-					<li class="menu_item menu_mm"><a href="news.html">News</a></li>
-					<li class="menu_item menu_mm"><a href="contact.html">Contact</a></li>
+					<li class="menu_item menu_mm" data-categoria="all"><a href="#">Todo</a></li>
+					<li class="menu_item menu_mm" data-categoria="bodas"><a href="#">Bodas</a></li>
+					<li class="menu_item menu_mm" data-categoria="quinces"><a href="#">Quinces</a></li>
+					<li class="menu_item menu_mm" data-categoria="cumples"><a href="#">Cumpleaños</a></li>
+					<li class="menu_item menu_mm" data-categoria="bautismos"><a href="#">Bautismos</a></li>
+					<li class="menu_item menu_mm" data-categoria="eventos"><a href="#">Eventos</a></li>
+
 				</ul>
+				
 
 				<!-- Menu Social --> <!--PARTE DEL MENU HAMBURGUESA DONDE APARECEN LOS CONTACTOS-->
 				
@@ -152,21 +158,21 @@
 
 	<!-- GALLERY SECTION -->
 	<div class="gallery">
-    <img src="images/portfolio/1.jpg">
-    <img src="images/portfolio/3.jpg">
-		<img src="images/portfolio/4.jpg">
-		<img src="images/portfolio/12.png">
-		<img src="images/portfolio/13.png">
-		<img src="images/portfolio/10.png">
-		<img src="images/portfolio/9.jpg">
-		<img src="images/portfolio/2.jpg">
-		<img src="images/portfolio/14.png">
-		<img src="images/portfolio/5.jpg">
-		<img src="images/portfolio/6.jpg">
+    <img class="bodas" src="images/portfolio/1.jpg">
+    <img class="quinces" src="images/portfolio/3.jpg">
+		<img class="cumples" src="images/portfolio/4.jpg">
+		<img class="bautismos" src="images/portfolio/12.png">
+		<img class="eventos" src="images/portfolio/13.png">
+		<img class="quinces" src="images/portfolio/10.png">
+		<img class="bautismos" src="images/portfolio/9.jpg">
+		<img class="bodas" src="images/portfolio/2.jpg">
+		<img class="cumples" src="images/portfolio/14.png">
+		<img class="cumples" src="images/portfolio/5.jpg">
+		<!-- <img src="images/portfolio/6.jpg">
 		<img src="images/portfolio/7.jpg">
 		<img src="images/portfolio/6.jpg">
 		<img src="images/portfolio/9.jpg">
-		<img src="images/portfolio/11.png">
+		<img src="images/portfolio/11.png"> -->
   </div>
 
 
@@ -179,7 +185,7 @@
 	<!-- BTN WSP -->
 
 	<div class="btn-wsp">
-		<a href="https://api.whatsapp.com/send?phone=XD" target="_blank" class="floating-button">
+		<a href="https://api.whatsapp.com/send?phone=XD" target="_blank" class="floating-button" id="whatsapp-button">
 			<img src="images/logos/WhatsApp-Logo-Transparent-Image_Blanca.png" alt="wsp-logo">
 		</a>
 	</div>
@@ -189,6 +195,8 @@
 	<footer class="footer">
 		<div class="container">
 			
+
+			<!-- ELIMINAR DESDE -->
 			<!-- Newsletter -->
 
 			<div class="newsletter">
@@ -214,6 +222,9 @@
 				</div>
 
 			</div>
+			<!-- ELIMINAR HASTA -->
+
+
 
 			<!-- Footer Content -->
 
@@ -333,6 +344,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="js/custom.js"></script>
 
 <script src="js/assets/images.js"></script>
+<script src="js/assets/btnWspHide.js"></script>
+<script src="js/assets/menuImg.js"></script>
+<script src="js/assets/hamburgImg.js"></script>
 
 
 </body>

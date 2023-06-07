@@ -301,10 +301,18 @@ section
 .header.scrolled
 {	
 	top: 15px;
-}
-.header.scrolled .header_content::before
-{
 	box-shadow: 0px 20px 49px rgba(0,0,0,0.17);
+}
+/* .header.scrolled .header_content::before
+{
+	box-shadow: 0px 20px 49px rgba(0,0,0,0.17);   -----MEPA Q SE PUEDE ELIMINAR-----
+}*/ 
+
+.header_content{
+	margin-inline: auto;
+	height: 100%;
+	width: auto;
+	background: gray; /*----QUITAR----*/
 }
 
 /*		ELIMINAR DESDE
@@ -332,10 +340,14 @@ section
 
 .logo_container
 {
-	display: inline-block;
-	padding-left: 76px;
+	display: inline-flex;
+	height: 100%;
 }
-.logo span
+.logo img{
+	width: 100%;
+	height: 100%;
+}
+/* .logo span
 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 30px;
@@ -344,7 +356,7 @@ section
 	vertical-align: middle;
 	text-transform: uppercase;
 	margin-left: 3px;
-}
+} */
 
 /*********************************
 3.2 Main Nav
@@ -353,8 +365,7 @@ section
 .main_nav_container
 {
 	display: inline-block;
-	margin-left: auto;
-	padding-right: 93px;
+	padding-left: 93px;
 }
 .main_nav
 {
@@ -933,7 +944,10 @@ section
 	background:#4d4e4e;
 }
 
-
+.hide-button {
+	opacity: 0;
+	background: #000;
+}
 
 /*********************************
 15. Footer
@@ -1166,5 +1180,4 @@ section
 	-ms-border-radius: 15%;
 	-o-border-radius: 15%;
 }
-
 
