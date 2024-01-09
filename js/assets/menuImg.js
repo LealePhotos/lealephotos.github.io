@@ -1,10 +1,10 @@
 var listaItems = document.querySelectorAll(".main_nav_list li");
 
 for (var i = 0; i < listaItems.length; i++) {
-  listaItems[i].addEventListener("click", function() {
+  listaItems[i].addEventListener("click", function(event) {
     var seleccionado = this.getAttribute("data-categoria");
-    var imagenes = document.querySelectorAll(".gallery img");
-    
+    var imagenes = document.querySelectorAll(".gallery picture");
+    event.preventDefault();
     if(seleccionado == "all"){
       for(let i=0; i<imagenes.length; i++){
         imagenes[i].style.display="block";

@@ -51,8 +51,9 @@ body
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
-	background: #1a1a1acd;
-	color: #a5a5a5;
+	background: #dee2e6;
+	/* background: #1a1a1acd; */
+	/* color: #a5a5a5; */
 }
 div
 {
@@ -133,15 +134,7 @@ h1, h2, h3, h4, h5, h6
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
-h1::selection, 
-h2::selection, 
-h3::selection, 
-h4::selection, 
-h5::selection, 
-h6::selection
-{
-	
-}
+
 ::-webkit-input-placeholder
 {
 	font-size: 14px !important;
@@ -277,7 +270,7 @@ section
 	transform: translateX(-50%);
 	width: 1318px;
 	height: 104px;
-	background: gray; /*----CAMBIAR COLOR----*/
+	background: #212529; /*----CAMBIAR COLOR----*/
 	z-index: 10;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
@@ -351,8 +344,8 @@ section
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	text-transform: uppercase;
+	color: #dee2e6;
 	font-weight: 700;
-	color: #3a3a3a;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -629,6 +622,121 @@ section
 5.1 Hero Slider
 *********************************/
 
+
+.banner{
+	position: relative;
+	background: #000;
+	width: 100%;
+	height: calc(100vh);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	animation: banner 10s infinite linear;
+	transition: all .1s ease-in-out;
+	-webkit-transition: all .1s ease-in-out;
+	-moz-transition: all .1s ease-in-out;
+	-ms-transition: all .1s ease-in-out;
+	-o-transition: all .1s ease-in-out;
+	-webkit-animation: banner 10s infinite linear;
+}
+
+.banner-content{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 22, 40, .55);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/* .banner-content .txt1{
+	animation: showTxt1 15s infinite linear;
+	-webkit-animation: showTxt1 15s infinite linear;
+}
+.banner-content .txt2{
+	animation: showTxt2 15s infinite linear;
+	-webkit-animation: showTxt2 15s infinite linear;
+}
+.banner-content .txt3{
+	animation: showTxt3 15s infinite linear;
+	-webkit-animation: showTxt3 15s infinite linear;
+} */
+
+@keyframes banner {
+	0%{
+		background-image: url("../images/ImgsLeale/5.jpg");
+	}
+	35%{
+		background-image: url("../images/ImgsLeale/6.jpg");
+	}
+	73%{
+		background-image:url("../images/ImgsLeale/16.jpg");
+	}
+	98%{
+		background-image:url("../images/ImgsLeale/5.jpg");
+	}
+	100%{
+		background-image:url("../images/ImgsLeale/5.jpg");
+	}
+}
+
+
+/* @keyframes showTxt1 {
+	0%{
+		opacity: 100%;
+	}
+	33%{
+		opacity: 100%;
+	}
+	34%{
+		opacity: 0%;
+	}
+	100%{
+		opacity: 0%;
+	}
+}
+@keyframes showTxt2 {
+	0%{
+		opacity: 0%;
+	}
+	33%{
+		opacity: 0%;
+	}
+	34%{
+		opacity: 100%;
+	}
+	66%{
+		opacity: 100%;
+	}
+	67%{
+		opacity: 0%;
+	}
+	100%{
+		opacity: 0%;
+	}
+}
+
+@keyframes showTxt3 {
+	0%{
+		opacity: 0%;
+	}
+	
+	66%{
+		opacity: 0%;
+	}
+	67%{
+		opacity: 100%;
+	}
+	100%{
+		opacity: 100%;
+	}
+} */
+
+
+
+/* FIJARME Q ELIMINAR DE ACA ABAJO: */
 .hero_slider_container
 {
 	width: 100%;
@@ -772,8 +880,89 @@ section
 	height: 48px;
 }
 
+.go-top-container{
+	position: fixed;
+	bottom: 4rem;
+	right: 4rem;
+	width: 2rem;
+	height: 4rem;
+	z-index: -1;
+}
+.go-top-button{
+	width: 0rem;
+	height: 0rem;
+	background: #ffb606;
+	cursor: pointer;
+	top: 50%;
+	left: 50%;
+	z-index: -1;
+	transform: translate(-50%,-50%);
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+}
+.go-top-button i{
+	position: absolute;
+	font-size: 1.7rem;
+	top: 48%;
+	left: 50%;
+	color: white;
+	transition: .2s;
+	transform: translate(-50%,-50%) scale(0);
+	-webkit-transform: translate(-50%,-50%) scale(0);
+	-moz-transform: translate(-50%,-50%) scale(0);
+	-ms-transform: translate(-50%,-50%) scale(0);
+	-o-transform: translate(-50%,-50%) scale(0);
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	-o-transition: .2s;
+}
+
+.showBtnUp {
+	z-index: 100;
+}
+
+.showBtnUp .go-top-button{
+	width: 5rem;
+	height: 5rem;
+	z-index: 101;
+	animation: popup .3s ease-in-out;
+	-webkit-animation: popup .3s ease-in-out;
+}
+
+.showBtnUp i{
+	transform: translate(-50%,-50%) scale(1);
+	-webkit-transform: translate(-50%,-50%) scale(1);
+	-moz-transform: translate(-50%,-50%) scale(1);
+	-ms-transform: translate(-50%,-50%) scale(1);
+	-o-transform: translate(-50%,-50%) scale(1);
+}
+
+@keyframes popup {
+	0%{
+		width: 0;
+		height: 0;
+	}
+	50%{
+		width: 8rem;
+		height: 8rem;
+	}
+	100%{
+		width: 6.6rem;
+		height: 6.6rem;
+	}
+}
 
 
+
+/* ELIMINAR DESDE? */
 .floating-button {
 	position: fixed;
 	bottom: 20px;
@@ -805,6 +994,7 @@ section
 	opacity: 0;
 	background: #000;
 }
+/* ELIMINAR HASTA? */
 
 /*********************************
 7. Footer						
@@ -813,13 +1003,15 @@ section
 .footer
 {
 	width: 100%;
-	padding-top: 86px;
 	background: #1a1a1a;
 }
 .footer .section_title h1				/*----------ELIMINAR----------*/
 {
 	color: #FFFFFF;
 }
+
+
+
 
 /*********************************
 7.1 Newsletter
@@ -873,6 +1065,12 @@ section
 	padding-top: 80px;
 	padding-bottom: 83px;
 	border-bottom: solid 2px #4d4e4e;
+	display: flex;
+	justify-content: center;
+}
+.footer_content .row{
+	justify-content: center;
+	align-items: center;
 }
 .footer_content .logo_container
 {
@@ -933,6 +1131,8 @@ section
 	width: 100%;
 }
 
+
+
 /*********************************
 7.3 Footer Copyright
 *********************************/
@@ -941,6 +1141,9 @@ section
 {
 	padding-top: 19px;
 	padding-bottom: 19px;
+	color: #686868;
+	display: flex;
+	justify-content: center;
 }
 .footer_social .menu_social_item a i
 {
@@ -960,15 +1163,18 @@ section
 /***********************************
 8 Gallery
 *********************************/
+.containerGallery{
+	display: grid;
+}
 
 .gallery {
   display: flex;
   flex-wrap:wrap;
 	align-items: center;
-	justify-items: center;
+	justify-content: center;
+	justify-self: center;
 	max-width: 80%;
-	margin-left:auto;
-	
+	margin-bottom: 100px;
 }
 
 .gallery img {
@@ -978,19 +1184,84 @@ section
   margin: 8px;
 }
 
-.gallery img, .gallery img:hover::after {
+/* .gallery img, .gallery img:hover::after {
 	opacity: .65;
 	transition: opacity 0.3s ease;
 	-webkit-transition: opacity 0.3s ease;
 	-moz-transition: opacity 0.3s ease;
 	-ms-transition: opacity 0.3s ease;
 	-o-transition: opacity 0.3s ease;
-}
+} */
+
 
 .gallery img:hover {
-	opacity: 1;
-	object-fit:scale-down;
+  border: 3px solid black;
+  transform: scale(1.05);
+	/* filter: brightness(1.4);
+	-webkit-filter: brightness(1.4); */
 }
+.gallery img:active{
+	transform: scale(0.95);
+	-webkit-transform: scale(0.95);
+	-moz-transform: scale(0.95);
+	-ms-transform: scale(0.95);
+	-o-transform: scale(0.95);
+}
+
+.blur-load{
+	position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+}
+
+.blur-load img{
+	opacity: 0;
+}
+
+
+.blur-load.loaded{
+	background-size:0;
+	filter: blur(0);
+	-webkit-filter: blur(0);
+}
+
+.blur-load.loaded img{
+	opacity: 1;
+	transition: opacity 300ms ease-in-out;
+	-webkit-transition: opacity 300ms ease-in-out;
+	-moz-transition: opacity 300ms ease-in-out;
+	-ms-transition: opacity 300ms ease-in-out;
+	-o-transition: opacity 300ms ease-in-out;
+}
+
+.blur-load::before{
+	content: "";
+	position: absolute;
+	inset: 0;
+	animation: pulse 1s infinite alternate-reverse;
+	-webkit-animation: pulse 1s infinite alternate-reverse;
+}
+
+.blur-load.loaded::before{
+	content: none;
+	animation: none;
+	-webkit-animation: none;
+}
+
+@keyframes pulse {
+	from{
+		background-color: rgba(255, 255, 255, 0);
+	}
+	to{
+		background-color: rgba(255, 255, 255, .1);
+	}
+}
+
+
+
 
 .modal {
 	display: none;
@@ -1012,6 +1283,7 @@ section
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	cursor: zoom-out;
 
   /* display: block;
   margin: 0 auto;
@@ -1022,9 +1294,10 @@ section
   margin-top: 20px; */
 }
 
+
 .modal .close {
 	color: #fff;
-	background:slategray;
+	background:#ffb606;
 	padding-left: 5px;
 	padding-right: 5px;
 	font-size: 30px;

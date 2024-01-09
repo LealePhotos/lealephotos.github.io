@@ -17,3 +17,7 @@ images.forEach(image => {
 closeBtn.addEventListener('click', () => {
   modal.style.display = 'none';
 });
+
+modal.addEventListener("click", ()=>{
+  modal.style.display = "none";
+});
