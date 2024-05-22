@@ -6,7 +6,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Course Project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
 <script src="http://code.jquery.com/jquery-lastest.js"></script>
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
@@ -24,7 +23,7 @@
 	<!-- Header --> <!--ES EL NOMBRE Y LOGO DE LA WEB Q APARECE AL LADO DEL MENU-->
 
 	<header class="header d-flex flex-row">
-		<div class="header_content d-flex flex-row align-items-center">
+		<div class="header_content ">
 			<!-- Logo -->
 			<div class="logo_container">
 				<div class="logo">
@@ -38,10 +37,8 @@
 				<div class="main_nav" id="contMenu">
 					<ul class="main_nav_list">
 						<li class="main_nav_item" data-categoria="all"><a href="#">Todo</a></li>
-						<li class="main_nav_item" data-categoria="espacio"><a href="#">Espacio</a></li>
-						<li class="main_nav_item" data-categoria="paisaje"><a href="#">Paisaje</a></li>
-						<li class="main_nav_item" data-categoria="abstracto"><a href="#">Abstracto</a></li>
-						<li class="main_nav_item" data-categoria="personaje"><a href="#">Personaje</a></li>
+						<li class="main_nav_item" data-categoria="cumple"><a href="#">Cumpleaños</a></li>
+						<li class="main_nav_item" data-categoria="baby"><a href="#">Baby</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -50,7 +47,7 @@
 
 		
 		<!-- Hamburger --> <!--ES EL MENU HECHO HAMBURGUESA-->
-		<div class="hamburger_container">
+		<div class="hamburger_container hamburger">
 			<i class="fas fa-bars trans_200"></i>
 		</div>
 
@@ -69,11 +66,8 @@
 			<div class="menu menu_mm">
 				<ul class="menu_list menu_mm">
 					<li class="menu_item menu_mm" data-categoria="all"><a href="#">Todo</a></li>
-					<li class="menu_item menu_mm" data-categoria="espacio"><a href="#">Espacio</a></li>
-					<li class="menu_item menu_mm" data-categoria="paisaje"><a href="#">Paisaje</a></li>
-					<li class="menu_item menu_mm" data-categoria="abstracto"><a href="#">Abstracto</a></li>
-					<li class="menu_item menu_mm" data-categoria="personaje"><a href="#">Personaje</a></li>
-
+					<li class="menu_item menu_mm" data-categoria="cumple"><a href="#">Cumpleaños</a></li>
+					<li class="menu_item menu_mm" data-categoria="baby"><a href="#">Baby</a></li>
 				</ul>
 				
 
@@ -81,15 +75,14 @@
 				
 				<div class="menu_social_container menu_mm">
 					<ul class="menu_social menu_mm">
-						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-pinterest"></i></a></li>
-						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-instagram"></i></a></li>
-						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="mailto:celesteleale09@gmail.com" target="_blank"><img src="images/logos/mail.png" alt="mail" class="imgHam" style="width: 14px;"></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://www.instagram.com/lealefotografia/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="https://wa.me/+5493412792107" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
 					</ul>
 				</div>
 
-				<div class="menu_copyright menu_mm">Colorlib All rights reserved</div>
+				
+				<div class="menu_copyright menu_mm"><span><p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Luciano Armas </p></span></div>
 			</div>
 
 		</div>
@@ -113,116 +106,70 @@
 	<!-- GALLERY SECTION -->
 <div class="containerGallery">
 	<div class="gallery">
-		<picture class="blur-load paisaje espacio" style="background-image: url(images/ImgsLeale/rezised/1.jpg);">
+		<picture class="blur-load baby" style="background-image: url(images/ImgsLeale/rezised/1.jpg);">
 			<img src="images/ImgsLeale/1.jpg" loading="lazy">
 		</picture>
-		<picture class="blur-load paisaje espacio" style="background-image: url(images/ImgsLeale/rezised/2.jpg);">
+		<picture class="blur-load baby" style="background-image: url(images/ImgsLeale/rezised/2.jpg);">
 			<img src="images/ImgsLeale/2.jpg" loading="lazy">
 		</picture>
-		<picture class="blur-load paisaje espacio" style="background-image: url(images/ImgsLeale/rezised/3.jpg);">
+		<picture class="blur-load baby" style="background-image: url(images/ImgsLeale/rezised/3.jpg);">
 			<img src="images/ImgsLeale/3.jpg" loading="lazy">
 		</picture>
-		<picture class="blur-load paisaje espacio" style="background-image: url(images/ImgsLeale/rezised/4.jpg);">
+		<picture class="blur-load baby" style="background-image: url(images/ImgsLeale/rezised/4.jpg);">
 			<img src="images/ImgsLeale/4.jpg" loading="lazy">
 		</picture>
-		<picture class="blur-load paisaje espacio" style="background-image: url(images/ImgsLeale/rezised/5.jpg);">
+		<picture class="blur-load baby" style="background-image: url(images/ImgsLeale/rezised/5.jpg);">
 			<img src="images/ImgsLeale/5.jpg" loading="lazy">
 		</picture>
-		<picture class="blur-load paisaje espacio" style="background-image: url(images/ImgsLeale/rezised/6.jpg);">
+		<picture class="blur-load baby" style="background-image: url(images/ImgsLeale/rezised/6.jpg);">
 			<img src="images/ImgsLeale/6.jpg" loading="lazy">
 		</picture>
-		<picture class="blur-load paisaje espacio" style="background-image: url(images/ImgsLeale/rezised/7.jpg);">
+		<picture class="blur-load cumple" style="background-image: url(images/ImgsLeale/rezised/7.jpg);">
 			<img src="images/ImgsLeale/7.jpg" loading="lazy">
 		</picture>
-		<picture class="blur-load paisaje espacio" style="background-image: url(images/ImgsLeale/rezised/8.jpg);">
+		<picture class="blur-load cumple" style="background-image: url(images/ImgsLeale/rezised/8.jpg);">
 			<img src="images/ImgsLeale/8.jpg" loading="lazy">
 		</picture>
-		<picture class="blur-load paisaje espacio" style="background-image: url(images/ImgsLeale/rezised/9.jpg);">
+		<picture class="blur-load cumple" style="background-image: url(images/ImgsLeale/rezised/9.jpg);">
 			<img src="images/ImgsLeale/9.jpg" loading="lazy">
 		</picture>
-		<picture class="blur-load paisaje espacio" style="background-image: url(images/ImgsLeale/rezised/10.jpg);">
+		<picture class="blur-load cumple" style="background-image: url(images/ImgsLeale/rezised/10.jpg);">
 			<img src="images/ImgsLeale/10.jpg" loading="lazy">
 		</picture>
-		<picture class="blur-load paisaje espacio" style="background-image: url(images/ImgsLeale/rezised/11.jpg);">
+		<picture class="blur-load cumple" style="background-image: url(images/ImgsLeale/rezised/11.jpg);">
 			<img src="images/ImgsLeale/11.jpg" loading="lazy">
 		</picture>
-		<picture class="blur-load paisaje espacio" style="background-image: url(images/ImgsLeale/rezised/12.jpg);">
+		<picture class="blur-load cumple" style="background-image: url(images/ImgsLeale/rezised/12.jpg);">
 			<img src="images/ImgsLeale/12.jpg" loading="lazy">
 		</picture>
-		<picture class="blur-load paisaje espacio" style="background-image: url(images/ImgsLeale/rezised/13.jpg);">
+		<picture class="blur-load cumple" style="background-image: url(images/ImgsLeale/rezised/13.jpg);">
 			<img src="images/ImgsLeale/13.jpg" loading="lazy">
 		</picture>
-		<picture class="blur-load paisaje espacio" style="background-image: url(images/ImgsLeale/rezised/14.jpg);">
+		<picture class="blur-load cumple" style="background-image: url(images/ImgsLeale/rezised/14.jpg);">
 			<img src="images/ImgsLeale/14.jpg" loading="lazy">
 		</picture>
-		<picture class="blur-load paisaje espacio" style="background-image: url(images/ImgsLeale/rezised/15.jpg);">
+		<picture class="blur-load cumple" style="background-image: url(images/ImgsLeale/rezised/15.jpg);">
 			<img src="images/ImgsLeale/15.jpg" loading="lazy">
 		</picture>
-		<picture class="blur-load paisaje espacio" style="background-image: url(images/ImgsLeale/rezised/16.jpg);">
+		<picture class="blur-load baby" style="background-image: url(images/ImgsLeale/rezised/16.jpg);">
 			<img src="images/ImgsLeale/16.jpg" loading="lazy">
 		</picture>
-		<picture class="blur-load paisaje espacio" style="background-image: url(images/ImgsLeale/rezised/17.jpg);">
+		<picture class="blur-load cumple" style="background-image: url(images/ImgsLeale/rezised/17.jpg);">
 			<img src="images/ImgsLeale/17.jpg" loading="lazy">
 		</picture>
-		<picture class="blur-load paisaje espacio" style="background-image: url(images/ImgsLeale/rezised/18.jpg);">
+		<picture class="blur-load cumple" style="background-image: url(images/ImgsLeale/rezised/18.jpg);">
 			<img src="images/ImgsLeale/18.jpg" loading="lazy">
 		</picture>
-		<picture class="blur-load paisaje espacio" style="background-image: url(images/ImgsLeale/rezised/19.jpg);">
+		<picture class="blur-load cumple" style="background-image: url(images/ImgsLeale/rezised/19.jpg);">
 			<img src="images/ImgsLeale/19.jpg" loading="lazy">
 		</picture>
-		<picture class="blur-load paisaje espacio" style="background-image: url(images/ImgsLeale/rezised/23.jpg);">
+		<picture class="blur-load cumple" style="background-image: url(images/ImgsLeale/rezised/23.jpg);">
 			<img src="images/ImgsLeale/23.jpg" loading="lazy">
 		</picture>
-		<picture class="blur-load paisaje espacio" style="background-image: url(images/ImgsLeale/rezised/24.jpg);">
+		<picture class="blur-load cumple" style="background-image: url(images/ImgsLeale/rezised/24.jpg);">
 			<img src="images/ImgsLeale/24.jpg" loading="lazy">
 		</picture>
 
-
-		<!-- <picture class="blur-load paisaje espacio" style="background-image: url(images/imgs/resized/356655.jpg);">
-			<img src="images/imgs/356655.jpg" loading="lazy">
-		</picture>
-		<picture class="blur-load paisaje" style="background-image: url(images/imgs/resized/aurora-en-lago_3840x2559_xtrafondos.com.jpg);"><img src="images/imgs/aurora-en-lago_3840x2559_xtrafondos.com.jpg" loading="lazy"></picture>
-		<picture class="blur-load abstracto" style="background-image: url(images/imgs/resized/humo-color-rosa-y-azul_3840x2160_xtrafondos.com.jpg);"><img src="images/imgs/humo-color-rosa-y-azul_3840x2160_xtrafondos.com.jpg" loading="lazy"></picture>
-		<picture class="blur-load abstracto" style="background-image: url(images/imgs/resized/la-luna-entre-llamarada-arte-digital_5120x2880_xtrafondos.com.jpg);"><img src="images/imgs/la-luna-entre-llamarada-arte-digital_5120x2880_xtrafondos.com.jpg" loading="lazy"></picture>
-		<picture class="blur-load abstracto" style="background-image: url(images/imgs/resized/ultrawide10.png);"><img src="images/imgs/ultrawide (10).png" loading="lazy"></picture>
-		<picture class="blur-load paisaje" style="background-image: url(images/imgs/resized/ultrawide11.jpg);"><img src="images/imgs/ultrawide (11).jpg" loading="lazy"></picture>
-		<picture class="blur-load paisaje" style="background-image: url(images/imgs/resized/ultrawide11.png);"><img src="images/imgs/ultrawide (11).png" loading="lazy"></picture>
-		<picture class="blur-load paisaje" style="background-image: url(images/imgs/resized/ultrawide12.jpg);"><img src="images/imgs/ultrawide (12).jpg" loading="lazy"></picture>
-		<picture class="blur-load espacio" style="background-image: url(images/imgs/resized/ultrawide5.png);"><img src="images/imgs/ultrawide (5).png" loading="lazy"></picture>
-		<picture class="blur-load abstracto" style="background-image: url(images/imgs/resized/ultrawide6.jpg);"><img src="images/imgs/ultrawide (6).jpg" loading="lazy"></picture>
-		<picture class="blur-load espacio" style="background-image: url(images/imgs/resized/ultrawide6.png);"><img src="images/imgs/ultrawide (6).png" loading="lazy"></picture>
-		<picture class="blur-load personaje" style="background-image: url(images/imgs/resized/ultrawide7.jpg);"><img src="images/imgs/ultrawide (7).jpg" loading="lazy"></picture>
-		<picture class="blur-load paisaje" style="background-image: url(images/imgs/resized/ultrawide7.png);"><img src="images/imgs/ultrawide (7).png" loading="lazy"></picture>
-		<picture class="blur-load paisaje" style="background-image: url(images/imgs/resized/ultrawide8.jpg);"><img src="images/imgs/ultrawide8.jpg" loading="lazy"></picture>
-		<picture class="blur-load espacio" style="background-image: url(images/imgs/resized/ultrawide8.png);"><img src="images/imgs/ultrawide8.png" loading="lazy"></picture> -->
-		<!-- 
-		<img loading="lazy" class="lazy quinces" data-src="images/content/AnyConv.com__quince1-min.webp">
-    <img loading="lazy" class="lazy quinces" data-src="images/content/AnyConv.com__quince4-min.webp">
-    <img loading="lazy" class="lazy quinces" data-src="images/content/AnyConv.com__quince5-min.webp">
-    <img loading="lazy" class="lazy quinces" data-src="images/content/AnyConv.com__quince6-min.webp">
-    <img loading="lazy" class="lazy quinces" data-src="images/content/AnyConv.com__quince7-min.webp">
-    <img loading="lazy" class="lazy quinces" data-src="images/content/AnyConv.com__quince8-min.webp">
-    <img loading="lazy" class="lazy quinces" data-src="images/content/AnyConv.com__quince9-min.webp">
-		<img loading="lazy" class="lazy quinces" data-src="images/content/AnyConv.com__quince2-min.webp">
-		<img loading="lazy" class="lazy quinces" data-src="images/content/AnyConv.com__quince3-min.webp">
-		<img loading="lazy" class="lazy bodas" 	 data-src="images/content/AnyConv.com__boda2-min.webp">
-    <img loading="lazy" class="lazy bodas"	 data-src="images/content/AnyConv.com__boda1-min.webp">
-		<img loading="lazy" class="lazy bodas" 	 data-src="images/content/AnyConv.com__boda3-min.webp">
-		<img loading="lazy" class="lazy bodas" 	 data-src="images/content/AnyConv.com__boda4-min.webp">
-		<img loading="lazy" class="lazy bodas" 	 data-src="images/content/AnyConv.com__boda5-min.webp">
-		<img loading="lazy" class="lazy bodas" 	 data-src="images/content/AnyConv.com__boda6-min.webp">
-		<img loading="lazy" class="lazy bodas" 	 data-src="images/content/AnyConv.com__boda7-min.webp">
-		<img loading="lazy" class="lazy bodas" 	 data-src="images/content/AnyConv.com__boda8-min.webp">
-		<img loading="lazy" class="lazy bodas" 	 data-src="images/content/AnyConv.com__boda9-min.webp">
-		<img loading="lazy" class="lazy bodas" 	 data-src="images/content/AnyConv.com__boda10-min.webp">
-		<img loading="lazy" class="lazy bodas" 	 data-src="images/content/AnyConv.com__boda11-min.webp">
-		<img loading="lazy" class="lazy bodas" 	 data-src="images/content/AnyConv.com__boda12-min.webp">
-		<img loading="lazy" class="lazy bodas" 	 data-src="images/content/AnyConv.com__boda13-min.webp">
-		<img class="cumples" src="images/portfolio/4.jpg">
-		<img class="bautismos" src="images/portfolio/12.png">
-		<img class="eventos" src="images/portfolio/13.png">
-		<img class="bautismos" src="images/portfolio/9.jpg">
-		<img class="cumples" src="images/portfolio/14.png"> -->
   </div>
 </div>
 
@@ -263,26 +210,25 @@
 							<ul>
 								<li class="footer_contact_item">
 									<div class="footer_contact_icon">
-										<a ><img src="images/logos/location-white.png" alt=""></a>
+										<a ><img src="images/logos/location-white.png" alt="location" class="imgFooter">Rosario, Argentina</a>
 									</div>
-									Rosario, Argentina
 								</li>
 								<li class="footer_contact_item">
 									<div class="footer_contact_icon">
-										<a href="https://wa.me/+5493412792107" target="_blank"><img src="images/logos/WhatsApp-Logo-Transparent-Image_Blanca.png" alt=""></i></a>
+										<a href="https://wa.me/+5493412792107" target="_blank"><img src="images/logos/WhatsApp-Logo-Transparent-Image_Blanca.png" alt="wsp" class="imgFooter"></i>+54 9 3412 79-2107</a>
 									</div>
-									+54 9 3412 79-2107
+									
 								</li>
 								<li class="footer_contact_item">
 									<div class="footer_contact_icon">
 										<a href="mailto:celesteleale09@gmail.com">
-											<img src="images/logos/mail-white.png" alt=""></a>
-									</div>celesteleale09@gmail.com
+											<img src="images/logos/mail-white.png" alt="mail" class="imgFooter">celesteleale09@gmail.com</a>
+									</div>
 								</li>
 								<li class="footer_contact_item">
 									<div class="footer_contact_icon">
-										<a href="https://www.instagram.com/lealefotografia/" target="_blank"><i class="fab fa-instagram fa-2x" style="color: #ffffffd1;"></i></a>
-									</div>lealefotografia
+										<a href="https://www.instagram.com/lealefotografia/" target="_blank"><i class="fab fa-instagram fa-2x" style="color: #ffffffd1; margin-right: 10px;" class="imgFooter"></i>lealefotografia</a>
+									</div>
 								</li>
 							</ul>
 						</div>
@@ -295,9 +241,7 @@
 
 			<div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
 				<div class="footer_copyright">
-					<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+					<span><p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Luciano Armas </p></span>
 
 		</div>
 	</footer>
@@ -316,10 +260,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 
 
-<script src="styles/bootstrap4/popper.js"></script>
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
-
-
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/custom.js"></script>
@@ -329,10 +269,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="js/assets/hamburgImg.js"></script>
 <script src="js/assets/btnGoUp.js"></script>
 
-<!-- <script src="js/assets/scroll.js"></script>   -->
-<!-- EN VEZ DE ESTO, DEBERIA PONER... -->
 <script src="js/assets/loadImgs.js"></script> 
-<!-- ESTO -->
 
 
 

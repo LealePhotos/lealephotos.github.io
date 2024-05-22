@@ -25,11 +25,11 @@ $(document).ready(function()
 
 	*/
 
-	var hamb = $('.hamburger');
+	// var hamb = $('.hamburger');
 	var header = $('.header');
 	var hambActive = false;
 	var menuActive = false;
-	var ctrl = new ScrollMagic.Controller();
+	// var ctrl = new ScrollMagic.Controller();
 
 	setHeader();
 

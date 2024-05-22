@@ -285,6 +285,9 @@ section
 
 
 .header_content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	margin-inline: auto;
 	height: 100%;
 	width: auto;
@@ -643,10 +646,10 @@ section
 		background-image: url("../images/ImgsLeale/5.jpg");
 	}
 	35%{
-		background-image: url("../images/ImgsLeale/6.jpg");
+		background-image: url("../images/ImgsLeale/5.jpg");
 	}
 	73%{
-		background-image:url("../images/ImgsLeale/16.jpg");
+		background-image:url("../images/ImgsLeale/5.jpg");
 	}
 	98%{
 		background-image:url("../images/ImgsLeale/5.jpg");
@@ -949,14 +952,21 @@ section
 .footer_contact_icon
 {
 	display: inline-block;
-	width: 24px;
+	/* width: 24px; */
+	width: 100%;
 	height: 24px;
 	vertical-align: middle;
 	margin-right: 10px;
 }
-.footer_contact_icon img
+
+.footer_contact_icon a{
+	color: #ffffffd1;
+}
+
+.imgFooter
 {
-	width: 100%;
+	width: 24px;
+	margin-right: 10px;
 }
 
 
@@ -996,18 +1006,23 @@ section
 }
 
 .gallery {
-  display: flex;
-  flex-wrap:wrap;
+  /* display: flex;
+  flex-wrap:wrap; */
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(500px, 1fr));
 	align-items: center;
 	justify-content: center;
 	justify-self: center;
 	max-width: 80%;
 	margin-bottom: 100px;
+	margin-top: 20px;
 }
 
 .gallery img {
   width: 500px;
   height: 500px;
+	/* width: 100%;
+	height: auto; */
   object-fit:cover;
   margin: 8px;
 }
@@ -1023,10 +1038,16 @@ section
 
 
 .gallery img:hover {
-  border: 3px solid black;
+  /* border: 3px solid black; */
+	box-shadow: 0 4px 8px rgba(10, 0, 0, 0.862);
   transform: scale(1.05);
-	/* filter: brightness(1.4);
-	-webkit-filter: brightness(1.4); */
+  /*filter: brightness(1.4);
+  -webkit-filter: brightness(1.4);
+   */
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
 .gallery img:active{
 	transform: scale(0.95);

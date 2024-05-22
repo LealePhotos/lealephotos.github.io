@@ -5,39 +5,63 @@
 
 [Table of Contents]
 
-1. 1600px
-2. 1440px
-3. 1280px
-4. 1199px
+1. 1900px
+2. 1550px
+3. 1380px
+4. 1280px
+5. 1199px
 5. 1024px
 6. 991px
 7. 959px
 8. 880px
-9. 768px
+9. 770px
 10. 767px
 11. 539px
 12. 479px
+13. 440px
 13. 400px
 
 ******************************/
 
 /************
-1. 1600px
+1. 1900px
 ************/
-
-@media only screen and (max-width: 1600px)
-{
+@media (max-width: 2060px){
 	
+.gallery {
+	grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
+	align-items: center;
+	justify-content: center;
+	justify-self: center;
 }
+
+.gallery img {
+  width: 400px;
+  height: 400px;
+}
+}
+
 
 /************
-2. 1440px
+2. 1550px
 ************/
 
-@media only screen and (max-width: 1440px)
+
+@media only screen and (max-width: 1550px)
 {
+	.gallery {
+		grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
+		align-items: center;
+		justify-content: center;
+		justify-self: center;
+	}
 	
+	.gallery img {
+		width: 350px;
+		height: 350px;
+	}
 }
+
 
 /************
 3. 1380px
@@ -70,10 +94,25 @@
 		width: 20px;
 		height: 20px;
 	}
+
+	.gallery {
+		grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+		align-items: center;
+		justify-content: center;
+		justify-self: center;
+	}
+	
+	.gallery img {
+		width: 300px;
+		height: 300px;
+	}
+
+
+
 }
 
 /************
-3. 1280px
+4. 1280px
 ************/
 
 @media only screen and (max-width: 1280px)
@@ -110,7 +149,7 @@
 }
 
 /************
-4. 1199px
+5. 1199px
 ************/
 
 @media only screen and (max-width: 1199px)
@@ -148,6 +187,9 @@
 
 @media only screen and (max-width: 991px)
 {
+	.header_content{
+		display: block;
+	}
 	.main_nav_container
 	{
 		display: none;
@@ -256,10 +298,10 @@
 }
 
 /************
-9. 768px
+9. 770px
 ************/
 
-@media only screen and (max-width: 768px)
+@media only screen and (max-width: 770px)
 {
 	
 }
@@ -302,10 +344,10 @@
 	{
 		padding-left: 15px;
 	}
-	.logo img
+	/* .logo img    -----ELIMINAR????
 	{
 		width: 30px;
-	}
+	} */
 	.logo span
 	{
 		font-size: 16px;
@@ -493,6 +535,26 @@
 		font-size: 10px;
 	}
 }
+
+/************
+14. 440px
+************/
+@media (max-width: 440px){
+	.gallery {
+		grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+		align-items: center;
+		justify-content: center;
+		justify-self: center;
+	}
+	
+	.gallery img {
+		width: 200px;
+		height: 200px;
+	}
+}
+
+
+
 
 /************
 14. 400px
