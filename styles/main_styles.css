@@ -8,17 +8,14 @@
 
 1. Fonts
 2. Body and some general stuff
-3. Header ---------------------> Hay algo pa eliminar
+3. Header
 	3.1 Logo
 	3.2 Main Nav
-	3.3 Header Side
-	3.4 Hamburger
+	3.3 Hamburger
 4. Menu
 	4.1 Menu Social
 	4.2 Menu copyright
-5. Home
-	5.1 Hero Slider
-	5.2 Hero Slider Navigation
+5. Hero Slider
 6. Buttons
 7. Footer
 	7.1 Footer Content
@@ -279,36 +276,10 @@ section
 	color: #ffb606;
 }
 
-/*-------ELIMINAR DESDE-------*/
-/*********************************
-3.3 Header Side
-*********************************/
-
-/* .header_side
-{
-	width: 279px;
-	height: 100%;
-	background: #ffb606;
-}
-.header_side img
-{
-	width: 29px;
-	height: 29px;
-}
-.header_side span
-{
-	display: block;
-	position: relative;
-	font-size: 18px;
-	font-weight: 500;
-	color: #FFFFFF;
-	padding-left: 12px;
-} */
-/*-------ELIMINAR HASTA-------*/
 
 
 /*********************************
-3.4 Hamburger
+3.3 Hamburger
 *********************************/
 
 .hamburger_container
@@ -533,21 +504,9 @@ section
 	opacity: 1;
 }
 
-/*--------ELIMINAR DESDE--------*/
-/*********************************
-5. Home
-*********************************/
-/* 
-.home
-{
-	width: 100%;
-	height: 100vh;
-} */
-/*--------ELIMINAR HASTA--------*/
-
 
 /*********************************
-5.1 Hero Slider
+5 Hero Slider
 *********************************/
 
 
@@ -598,48 +557,12 @@ section
 	}
 }
 
-/*-------------ELIMINAR DESDE-------------*/
-/* .hero_slider_container
-{
-	width: 100%;
-	height: 100%;
-}
-.hero_slide
-{
-	width: 100%;
-	height: 100%;
-	background: #000; -------------TAL VEZ LO CAMBIE AL COLOR-------------
-}
-.hero_slide_background
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-repeat: no-repeat;
-	background-size:cover;					-------------TENGO QUE MODIFICAR ESTO PARA LAS != RESOLUCIONES-------------
-	background-position: center center;
-	filter: grayscale(100%);
-} */
-/*-------------ELIMINAR HASTA-------------*/
-
 
 .hero_slide_container
 {
 	width: 100%;
 	height: 100vh;
 }
-
-/* .hero_slide_content <--------ELIMINAR
-{
-	max-width: 80%;
-	-webkit-transform: translateY(30px);
-	-moz-transform: translateY(30px);
-	-ms-transform: translateY(30px);
-	-o-transform: translateY(30px);
-	transform: translateY(30px);
-} */
 
 .animated
 {
@@ -654,62 +577,6 @@ section
 	animation-delay : 0ms;
 }
 
-
-/*-------------ELIMINAR DESDE-------------*/
-/*********************************
-5.2 Hero Slider Navigation
-*********************************/
-
-/* .hero_slider_nav
-{
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	transform: translateY(calc(-50% + 30px));
-	width: 58px;
-	height: 58px;
-	background: #FFFFFF;
-	z-index: 9;
-	cursor: pointer;
-}
-.hero_slider_nav:hover
-{
-	background: #ffb606;
-}
-.hero_slider_nav:hover span
-{
-	color: #FFFFFF;
-}
-.hero_slider_nav span
-{
-	display: block;
-	text-transform: uppercase;
-	font-size: 12px;
-	font-weight: 700;
-	color: #121212;
-	line-height: 1;
-	background: red;
-}
-.hero_slider_left
-{
-	left: 4.32%;
-}
-.hero_slider_right
-{
-	right: 4.32%;
-} */
-/*-------------ELIMINAR HASTA-------------*/
 
 
 /*********************************
@@ -847,7 +714,6 @@ section
 .footer_content .row{
 	display: flex;
 	justify-content: center;
-	/* align-items: center; */
 }
 .footer_content .logo_container
 {
@@ -900,7 +766,6 @@ section
 .footer_contact_icon
 {
 	display: inline-block;
-	/* width: 24px; */
 	width: 100%;
 	height: 24px;
 	vertical-align: middle;
@@ -931,18 +796,6 @@ section
 	display: flex;
 	justify-content: center;
 }
-/* .footer_social .menu_social_item a i
-{
-	color: #FFFFFF;
-}
-.footer_social .menu_social_item a i:hover
-{
-	color: #ffb606;
-}
-.footer_social .menu_social_item:last-child
-{
-	margin-right: 0px;
-} */
 
 
 
@@ -954,8 +807,6 @@ section
 }
 
 .gallery {
-  /* display: flex;
-  flex-wrap:wrap; */
 	display: grid;
 	grid-template-columns: repeat(auto-fit,minmax(520px, 1fr));
 	align-items: center;
@@ -969,29 +820,15 @@ section
 .gallery img {
   width: 500px;
   height: 500px;
-	/* width: 100%;
-	height: auto; */
   object-fit:cover;
   margin: 8px;
 }
 
-/* .gallery img, .gallery img:hover::after {
-	opacity: .65;
-	transition: opacity 0.3s ease;
-	-webkit-transition: opacity 0.3s ease;
-	-moz-transition: opacity 0.3s ease;
-	-ms-transition: opacity 0.3s ease;
-	-o-transition: opacity 0.3s ease;
-} */
 
 
 .gallery img:hover {
-  /* border: 3px solid black; */
 	box-shadow: 0 4px 8px rgba(10, 0, 0, 0.862);
   transform: scale(1.05);
-  /*filter: brightness(1.4);
-  -webkit-filter: brightness(1.4);
-   */
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
@@ -1082,13 +919,6 @@ section
 	transform: translate(-50%, -50%);
 	cursor: zoom-out;
 
-  /* display: block;
-  margin: 0 auto;
-	height: auto;
-	width: auto;
-  max-width: 95%;
-  max-height: 95%;
-  margin-top: 20px; */
 }
 
 
