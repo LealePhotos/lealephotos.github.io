@@ -164,41 +164,14 @@ h1, h2, h3, h4, h5, h6
 	font-weight: 500 !important;
 	color: #a5a5a5 !important;
 }
-.form-control
-{
-	color: #db5246;
-}
+
 section
 {
 	display: block;
 	position: relative;
 	box-sizing: border-box;
 }
-.clear
-{
-	clear: both;
-}
-.clearfix::before, .clearfix::after
-{
-	content: "";
-	display: table;
-}
-.clearfix::after
-{
-	clear: both;
-}
-.clearfix
-{
-	zoom: 1;
-}
-.float_left
-{
-	float: left;
-}
-.float_right
-{
-	float: right;
-}
+
 .trans_200
 {
 	-webkit-transition: all 200ms ease;
@@ -207,50 +180,10 @@ section
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
-.trans_300
-{
-	-webkit-transition: all 300ms ease;
-	-moz-transition: all 300ms ease;
-	-ms-transition: all 300ms ease;
-	-o-transition: all 300ms ease;
-	transition: all 300ms ease;
-}
-.trans_400
-{
-	-webkit-transition: all 400ms ease;
-	-moz-transition: all 400ms ease;
-	-ms-transition: all 400ms ease;
-	-o-transition: all 400ms ease;
-	transition: all 400ms ease;
-}
-.trans_500
-{
-	-webkit-transition: all 500ms ease;
-	-moz-transition: all 500ms ease;
-	-ms-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
-	transition: all 500ms ease;
-}
-.fill_height
-{
-	height: 100%;
-}
 .super_container
 {
 	width: 100%;
 	overflow: hidden;
-}
-.prlx_parent
-{
-	overflow: hidden;
-}
-.prlx
-{
-	height: 130% !important;
-}
-.nopadding
-{
-	padding: 0px !important;
 }
 
 /*********************************
@@ -346,11 +279,12 @@ section
 	color: #ffb606;
 }
 
+/*-------ELIMINAR DESDE-------*/
 /*********************************
 3.3 Header Side
 *********************************/
 
-.header_side
+/* .header_side
 {
 	width: 279px;
 	height: 100%;
@@ -369,7 +303,9 @@ section
 	font-weight: 500;
 	color: #FFFFFF;
 	padding-left: 12px;
-}
+} */
+/*-------ELIMINAR HASTA-------*/
+
 
 /*********************************
 3.4 Hamburger
@@ -597,15 +533,18 @@ section
 	opacity: 1;
 }
 
+/*--------ELIMINAR DESDE--------*/
 /*********************************
 5. Home
 *********************************/
-
+/* 
 .home
 {
 	width: 100%;
 	height: 100vh;
-}
+} */
+/*--------ELIMINAR HASTA--------*/
+
 
 /*********************************
 5.1 Hero Slider
@@ -659,9 +598,8 @@ section
 	}
 }
 
-
-/* FIJARME Q ELIMINAR DE ACA ABAJO: */
-.hero_slider_container
+/*-------------ELIMINAR DESDE-------------*/
+/* .hero_slider_container
 {
 	width: 100%;
 	height: 100%;
@@ -670,7 +608,7 @@ section
 {
 	width: 100%;
 	height: 100%;
-	background: #000; /*-------------TAL VEZ LO CAMBIE AL COLOR-------------*/
+	background: #000; -------------TAL VEZ LO CAMBIE AL COLOR-------------
 }
 .hero_slide_background
 {
@@ -680,16 +618,20 @@ section
 	width: 100%;
 	height: 100%;
 	background-repeat: no-repeat;
-	background-size:cover;					/*-------------TENGO QUE MODIFICAR ESTO PARA LAS != RESOLUCIONES-------------*/
+	background-size:cover;					-------------TENGO QUE MODIFICAR ESTO PARA LAS != RESOLUCIONES-------------
 	background-position: center center;
 	filter: grayscale(100%);
-}
+} */
+/*-------------ELIMINAR HASTA-------------*/
+
+
 .hero_slide_container
 {
 	width: 100%;
 	height: 100vh;
 }
-.hero_slide_content
+
+/* .hero_slide_content <--------ELIMINAR
 {
 	max-width: 80%;
 	-webkit-transform: translateY(30px);
@@ -697,7 +639,7 @@ section
 	-ms-transform: translateY(30px);
 	-o-transform: translateY(30px);
 	transform: translateY(30px);
-}
+} */
 
 .animated
 {
@@ -712,11 +654,13 @@ section
 	animation-delay : 0ms;
 }
 
+
+/*-------------ELIMINAR DESDE-------------*/
 /*********************************
 5.2 Hero Slider Navigation
 *********************************/
 
-.hero_slider_nav
+/* .hero_slider_nav
 {
 	display: -webkit-box;
 	display: -moz-box;
@@ -764,7 +708,8 @@ section
 .hero_slider_right
 {
 	right: 4.32%;
-}
+} */
+/*-------------ELIMINAR HASTA-------------*/
 
 
 /*********************************
@@ -900,12 +845,15 @@ section
 	justify-content: center;
 }
 .footer_content .row{
+	display: flex;
 	justify-content: center;
-	align-items: center;
+	/* align-items: center; */
 }
 .footer_content .logo_container
 {
 	padding-left: 0px;
+	margin-right: 100px;
+	height: 100px;
 }
 
 
@@ -983,7 +931,7 @@ section
 	display: flex;
 	justify-content: center;
 }
-.footer_social .menu_social_item a i
+/* .footer_social .menu_social_item a i
 {
 	color: #FFFFFF;
 }
@@ -994,7 +942,7 @@ section
 .footer_social .menu_social_item:last-child
 {
 	margin-right: 0px;
-}
+} */
 
 
 
@@ -1009,7 +957,7 @@ section
   /* display: flex;
   flex-wrap:wrap; */
 	display: grid;
-	grid-template-columns: repeat(auto-fit,minmax(500px, 1fr));
+	grid-template-columns: repeat(auto-fit,minmax(520px, 1fr));
 	align-items: center;
 	justify-content: center;
 	justify-self: center;
